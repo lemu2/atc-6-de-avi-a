@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi página web</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #24292e;
+            color: white;
+            padding: 25px;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        .contenido {
+            background-color: white;
+            margin: 30px auto;
+            padding: 25px;
+            width: 80%;
+            border-radius: 10px;
+        }
+
+        button {
+            background-color: #2ea44f;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #22863a;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Bienvenido a mi página web</h1>
+        <p>Proyecto de la materia ATC-6-DE-AVI-A</p>
+    </header>
+
+    <div class="contenido">
+        <h2>Mi primera página web</h2>
+
+        <p>Hola, mi nombre es Oliver Lemus.</p>
+
+        <p>Estoy aprendiendo a utilizar GitHub y HTML.</p>
+
+        <p>Este es mi primer proyecto de programación.</p>
+
+        <button onclick="mostrarMensaje()">Haz clic aquí</button>
+
+        <p id="mensaje"></p>
+    </div>
+
+    <script>
+        function mostrarMensaje() {
+            document.getElementById("mensaje").innerHTML =
+                "¡Hola! Gracias por visitar mi página web.";
+        }
+    </script>
+
+</body>
+</html>
